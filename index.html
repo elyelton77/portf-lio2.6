@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Elyelton Afonso - Desenvolvedor Web, Designer e Criativo">
+    <meta name="keywords" content="desenvolvedor web, designer, portfólio, projetos">
+    <meta name="author" content="Elyelton Afonso">
+    <title>Elyelton Afonso - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("q2R5UYh5I1P7KgNCp");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Tela de Introdução -->
+    <div class="intro-screen">
+        <div class="intro-content">
+            <h1 class="intro-title">Bem-vindo ao Meu Portfólio</h1>
+            <div class="intro-text">
+                <p>Desenvolvedor Web | Designer | Criativo</p>
+            </div>
+            <div class="intro-loader">
+                <div class="loader"></div>
+                <div class="loader-particles"></div>
+            </div>
+            <button class="enter-button">
+                <span>Entrar <i class="fas fa-arrow-right"></i></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content" style="display: none;">
+        <!-- Navegação -->
+        <nav class="navbar">
+            <div class="logo">Elyelton</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+
+        <!-- Seção Início -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Olá, eu sou <span class="name">Elyelton</span> Afonso</h1>
+                <p class="subtitle">Desenvolvedor Web | Designer | Criativo</p>
+                <div class="cta-buttons">
+                    <a href="#projetos" class="btn primary">Ver Projetos</a>
+                    <a href="#contato" class="btn secondary">Contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="about">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Me chamo Elyelton Correa Afonso, tenho 19 anos, sou estudante de Análise e Desenvolvimento de Sistemas, gosto muito da tecnologia, programação e design. Estou em busca da minha primeira oportunidade na área, com o objetivo de crescer profissionalmente, aprender com os desafios e alcançar minha independência. Gosto de unir criatividade e lógica para desenvolver soluções úteis e agradáveis.</p>
+                </div>
+                <div class="about-image">
+                    <div class="profile-image">
+                        <img src="fotoperfil.jpg" alt="Foto de Elyelton">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="projects">
+            <h2>Meus Projetos</h2>
+            <div class="project-grid">
+                <!-- Projeto 1 - Portfólio -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="portfolio.jpg" alt="Portfólio">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Meu Portfólio</h3>
+                        <p>Um portfólio moderno e responsivo desenvolvido com HTML, CSS e JavaScript. Este projeto foi criado para apresentar meus trabalhos e habilidades de forma interativa e atraente, utilizando as mais recentes tecnologias web. O objetivo principal era criar uma interface intuitiva e responsiva que destacasse meus projetos e experiência profissional.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="openModal('portfolio')">
+                                Ver Projeto
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 - Loja de Roupas Virtual -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="LojaRoupas.jpg" alt="Loja de Roupas">
+                        <div class="project-overlay">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Loja de Roupas Virtual</h3>
+                        <p>Projeto de e-commerce desenvolvido com foco em usabilidade, identidade visual moderna e experiência do usuário. A loja permite a visualização de produtos, detalhes como preço e descrição, além de funcionalidades essenciais como carrinho de compras e finalização de pedidos. O sistema foi pensado para ser responsivo, intuitivo e escalável, simulando um ambiente real de vendas online e aplicando conceitos de design, organização de dados e boas práticas de desenvolvimento web.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn" onclick="openModal('Loja_de_Roupas')">
+                                Ver Projeto
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects">
+                <a href="projetos.html" class="btn view-all-btn">
+                    Ver Todos os Projetos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="skills">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Ferramentas</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="contact">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form" onsubmit="return sendEmail(event)">
+                    <input type="text" name="user_name" placeholder="Seu Nome" required>
+                    <input type="email" name="user_email" placeholder="Seu Email" required>
+                    <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit" class="btn primary">
+                        <span class="button-text">Enviar Mensagem</span>
+                        <div class="loading-spinner" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                    </button>
+                </form>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/lyelton_/" class="social-link" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                    <a href="https://www.facebook.com/elyelton.afonso" class="social-link" target="_blank"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+                    <a href="https://github.com/elyelton77" class="social-link" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>
+                    <a href="https://www.linkedin.com/in/elyelton-afonso-9885a735a/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2025 Elyelton Afonso. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Nome do Projeto</h2>
+                <button class="close-modal" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Projeto" class="modal-image" id="modalImage">
+                <div class="modal-tags" id="modalTags"></div>
+                <div class="modal-description" id="modalDescription"></div>
+                <div class="modal-features">
+                    <h3>Principais Funcionalidades</h3>
+                    <ul id="modalFeatures"></ul>
+                </div>
+                <div class="modal-links" id="modalLinks"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Balão de Agradecimento -->
+    <div class="balloon-overlay" id="balloonOverlay"></div>
+    <div class="thank-you-balloon" id="thankYouBalloon">
+        <i class="fas fa-check-circle"></i>
+        Obrigado pela mensagem!
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

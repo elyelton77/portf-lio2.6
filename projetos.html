@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore os projetos de Elyelton Afonso - Desenvolvedor Web, Designer e Criativo">
+    <meta name="keywords" content="projetos, portfólio, desenvolvedor web, designer">
+    <meta name="author" content="Elyelton Afonso">
+    <title>Meus Projetos - Portfólio de Elyelton Afonso</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+    <!-- Botão de Tema -->
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="projects-header">
+        <h1>Meus Projetos</h1>
+        <p>Explore todos os meus projetos e trabalhos desenvolvidos</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Projeto 1 - Portfólio -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="portfolio.jpg" alt="Portfólio">
+                <div class="project-overlay">
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Portfólio</h3>
+                <p>Um portfólio moderno e responsivo desenvolvido com HTML, CSS e JavaScript. Este projeto foi criado para apresentar meus trabalhos e habilidades de forma interativa e atraente, utilizando as mais recentes tecnologias web. O objetivo principal era criar uma interface intuitiva e responsiva que destacasse meus projetos e experiência profissional.</p>
+                <div class="project-links">
+                    <a href="#" class="btn" onclick="openModal('portfolio')">
+                        Ver Projeto
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projeto 2 - Loja de Roupas Virtual -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="LojaRoupas.jpg" alt="Loja de Roupas">
+                <div class="project-overlay">
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Loja de Roupas Virtual</h3>
+                <p>Projeto de e-commerce desenvolvido com foco em usabilidade, identidade visual moderna e experiência do usuário. A loja permite a visualização de produtos, detalhes como preço e descrição, além de funcionalidades essenciais como carrinho de compras e finalização de pedidos. O sistema foi pensado para ser responsivo, intuitivo e escalável, simulando um ambiente real de vendas online e aplicando conceitos de design, organização de dados e boas práticas de desenvolvimento web.</p>
+                <div class="project-links">
+                    <a href="#" class="btn" onclick="openModal('Loja_de_Roupas')">
+                        Ver Projeto
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projeto 3 - Em Breve -->
+        <div class="project-card">
+            <div class="project-content coming-soon">
+                <div class="coming-soon-content">
+                    <i class="fas fa-clock coming-soon-icon"></i>
+                    <h3>Em Breve</h3>
+                    <p>Novo projeto em desenvolvimento. Em breve mais detalhes!</p>
+                    <div class="project-links">
+                        <a href="#" class="btn disabled">
+                            Em Desenvolvimento
+                            <i class="fas fa-clock"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Nome do Projeto</h2>
+                <button class="close-modal" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Projeto" class="modal-image" id="modalImage">
+                <div class="modal-tags" id="modalTags"></div>
+                <div class="modal-description" id="modalDescription"></div>
+                <div class="modal-features">
+                    <h3>Principais Funcionalidades</h3>
+                    <ul id="modalFeatures"></ul>
+                </div>
+                <div class="modal-links" id="modalLinks"></div>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <script src="projetos.js"></script>
+</body>
+</html> 
