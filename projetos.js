@@ -13,7 +13,7 @@ const projetos = {
             "Otimizado para performance"
         ],
         demoLink: "#",
-        githubLink: "https://github.com/elyelton77/portf-lio2.6.git"
+        githubLink: "https://github.com/elyelton77/portf-lio2.6"
     },
     Loja_de_Roupas: {
         titulo: "Loja de Roupas",
